@@ -148,3 +148,12 @@ if(signinarr !== null){
     signin.textContent=signinarr[signinarr.length-1].name;
     signup.textContent="Log out"
 }
+signup.addEventListener("click",signupfunc);
+function signupfunc(){
+    if(signup.textContent==="Log out"){
+        window.location.href="signup.html"
+    }else{
+        signinarr.spice(signinarr.length-1,1);
+       
+    }
+}
