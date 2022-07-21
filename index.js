@@ -1,13 +1,13 @@
 let sales1=document.querySelector("#sale");
 sales1.addEventListener("click",salefunc);
 function salefunc(){
-    window.location.href="homepage-1.html"
+    window.location.href="homepage.html"
 }
 
 let viewall=document.querySelector("#viewall");
 viewall.addEventListener("click",viewfunc);
 function viewfunc(){
-    window.location.href="homepage-1.html"
+    window.location.href="homepage.html"
 }
 let mens=document.querySelector("#mensnav");
 mens.addEventListener("click",mensfunc);
