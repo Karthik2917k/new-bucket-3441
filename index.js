@@ -1,13 +1,13 @@
 let sales1=document.querySelector("#sale");
 sales1.addEventListener("click",salefunc);
 function salefunc(){
-    window.location.href="homepage-1.html"
+    window.location.href="homepage.html"
 }
 
 let viewall=document.querySelector("#viewall");
 viewall.addEventListener("click",viewfunc);
 function viewfunc(){
-    window.location.href="homepage-1.html"
+    window.location.href="homepage.html"
 }
 let mens=document.querySelector("#mensnav");
 mens.addEventListener("click",mensfunc);
@@ -144,16 +144,12 @@ function divf203func(){
 let signin=document.querySelector("#signin");
 let signup=document.querySelector("#signup");
 let signinarr=JSON.parse(localStorage.getItem("signin"))||[];
-if(signinarr !== null){
+if(signinarr === null){
+    signin.textContent="Sign In";
+    signup.textContent="Sign Up"
+}
+else if(signinarr !== null){
     signin.textContent=signinarr[signinarr.length-1].name;
-    signup.textContent="Log out"
+    signup.textContent=""
 }
-signup.addEventListener("click",signupfunc);
-function signupfunc(){
-    if(signup.textContent==="Log out"){
-        window.location.href="signup.html"
-    }else{
-        signinarr.spice(signinarr.length-1,1);
-       
-    }
-}
+
