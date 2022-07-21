@@ -64,7 +64,8 @@ function discfunc(el){
     let code=form.disc.value;
     if(code==="masai30"){
         ttotal=ttotal-(ttotal*0.30);
-        discountprice.textContent="$ "+ttotal+"/-";
+       
+        discountprice.textContent="$ "+ ttotal.toFixed(1)+"/-";
        alert("30% Discount applied using 'masai30' Code");
     }else if(code!=="masai30"){
         alert("wrong Cupon code")
@@ -73,4 +74,5 @@ function discfunc(el){
 checkout.addEventListener("click",checkfunc);
 function checkfunc(){
     localStorage.setItem("totalprice",JSON.stringify(ttotal));
+    window.location.href="address.html";
 }
