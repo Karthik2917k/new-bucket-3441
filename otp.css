@@ -1,0 +1,81 @@
+
+#container{
+    width: 30%;
+    margin: auto;
+    padding: 40px;
+   
+}
+#container1{
+    display: flex;
+    justify-content: space-between;
+    border:1px solid lightgray;
+    padding: 10px 10px 10px 10px;
+}
+#container1>div:nth-child(2){
+    padding-top: 15px;
+}
+#container>div:nth-child(2){
+    border-top:1px solid lightgray;
+    background: lightgray;
+    text-align: center;
+}
+#container>div:nth-child(3){
+   
+    text-align: center;
+    margin:auto;
+   margin-top: -16px;
+    border-left:1px solid lightgray;
+    border-right:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+}
+#o>div:nth-child(1){
+    width:70%;
+    margin:auto;
+    background-color:  #00b9f5;
+    color:white;
+    padding: 10px 0px;
+    font-size: 20px;
+
+}
+#o>div:nth-child(2){
+    width:70%;
+    margin:auto;
+    border: 1px solid lightgray; 
+    border-bottom:none ;   
+}
+input[type="number"]{
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border:1px solid#00b9f5;
+}
+input[type="number"]:hover{
+    border:2px solid#00b9f5;
+}
+input[type="submit"]{
+    padding: 10px;
+    margin-bottom: 30px;
+    color: white;
+    margin-right: 90px;
+   border-radius: 4px;
+    border: none;
+    background-color:#00b9f5;   
+}
+button{
+    position: absolute;
+    top:414px;
+    left:750px;
+    padding: 10px;
+    
+    color: white;
+   
+    border: none;
+    border-radius: 4px;
+    background-color:#00b9f5;
+}
+p{
+    text-align: center;
+}
+#brand{
+    margin-left: 48%;
+}

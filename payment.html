@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./payment.css">
 </head>
 <body>
     <div class="bg">
@@ -20,14 +20,59 @@
         </div>
     </div>
     <!-- body -->
-    <form action="">
-        <select name="" id="name">
-            <option value="Product-price">Product-price</option>
-            <option value="High-Low">High-Low</option>
-            <option value="Low-High">Low-High</option>
-        </select>
-    </form>
-    <div class="container"></div>
+    <div class="payment">
+        <form action="">
+            <h1>CREDIT / DEBIT CARD <span id="amount">0</span></h1>
+            <div>
+                <div>
+                    <label for="">CARD NUMBER</label><br>
+                    <input type="number" placeholder="Enter Card Number" id="cardnumber"><br>
+                    <label for="">EXPIRY DATE</label><br>
+                    <select name="" id="month">
+                        <option value="MONTH">MONTH</option>
+                        <option value="JAN">JAN</option>
+                        <option value="FEB">FEB</option>
+                        <option value="MAR">MAR</option>
+                        <option value="APR">APR</option>
+                        <option value="MAY">MAY</option>
+                        <option value="JUN">JUN</option>
+                        <option value="JUL">JUL</option>
+                        <option value="AUG">AUG</option>
+                        <option value="SEP">SEP</option>
+                        <option value="COT">OCT</option>
+                        <option value="NOV">NOV</option>
+                        <option value="DEC">DEC</option>
+                    </select>
+                    <select name="" id="year">
+                        <option value="YY">YY</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                    </select>
+                </div>
+                <div>
+                    
+                    <label for="">NAME ON CARD</label><br>
+                    <input type="text" placeholder="Enter name" id="name"><br>
+                    <label for="">CVV</label><br>
+                    <input type="password" name="" id="cvv" placeholder="Enter Cvv"><br>
+                </div>
+            </div>
+            <br><br><br>
+            <input type="submit" value="Proceed to Payment">
+        </form>
+    </div>
     <!-- Footer -->
     <hr>
     <div class="home-page-6">
@@ -75,7 +120,7 @@
             <div>
                 <h2>ABOUT ASOS</h2>
                 <ul>
-                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="https://asoscareers.asos.com/">Career at ASOS</a></li>
                     <li><a href="https://www.asosplc.com/fashion-with-integrity/">Corporate Responsibility</a></li>
                     <li><a href="https://www.asosplc.com/">Investors site</a></li>
@@ -112,5 +157,5 @@
             <button id="divf203">Accessbility</button></div>
        </div>
 </body>
-<script src="./logo501.js"></script>
+<script src="./payment.js"></script>
 </html>

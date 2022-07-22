@@ -14,39 +14,7 @@
     grid-template-columns: 100px 650px 400px ;
     gap:20px 20px;
 }
-#about{
-    margin-top: 100px;
-}
-#orderr{
-    color:green;
-    font-size: 70px;
-    text-align: center;
-    margin: 180px 0px 150px 0px;
-}
-#about>h1{
-    width:50%;
-  
-   margin: auto;
-    padding: 15px;
-}
-#about>#sze{
-    width: 60%;
-    margin-left: 15%;
-    text-align: center;
-}
-#size{
-    
-    text-align: center;
-}
-#about>div{
-    text-align: center;
-}
-#about>p{
-    width:50%;
-    margin: auto;
-    padding: 50px;
-    font-family: sans-serif;
-}
+
 #log{
     text-decoration: none;
     color: white;
@@ -67,50 +35,7 @@
     color:white;
     padding:0px 20px;
 }
-#name{
-    margin-top: 90px;
-    text-align: left;
-    padding: 8px;
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    margin-bottom: 50px;
-    margin-left: 90%;
-}
-.container{
-    width: 90%;
-    height:auto;
-    margin: auto;
-    
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px;
-    text-align: center;
-    padding-bottom: 50px;
-}
-.container>div{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.container>div>img{
-    width:100%;
-
-}
-.container>div>h3{
-    width:80%;
-    margin: auto;
-}
-.container>div>button{
-    border:none;
-    background: green;
-    color: black;
-    font-size: 10px;
-    padding: 15px 50px;
-    margin-bottom: 50px;
-}
-.container>div>button:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color:white;
-}
+  
 .home-page-6{
     width:60%;
     height:60px;
@@ -205,4 +130,67 @@
 }
 #footer2>div>button:nth-child(1),#footer2>div>button:nth-child(2){
     border-right: 2px solid black;
+}
+.payment{
+    width:auto;
+    height:500px;
+    padding: 100px 0px;
+    margin-top: 80px;
+    background: steelblue;
+}  
+form{
+    width:40%;
+    height:400px;
+    margin: auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 15px;
+    padding:40px;
+    background-color: aliceblue;
+}
+form>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+label{
+    font-size: 30px;
+    font-family: sans-serif;
+    margin:10px;
+}
+input[type="text"],input[type="number"],input[type="password"]{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:10px;
+    margin:10px;
+    border:2px solid rgb(56, 83, 99);
+    background:white;
+    border-radius: 4px;
+}
+select{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:10px;
+    margin: 10px;
+    border:2px solid rgb(56, 83, 99);
+    border-radius: 4px;
+}
+input[type="submit"]{
+    font-family: sans-serif;
+    font-size: 20px;
+    padding:20px 40px;
+    margin-left:29%;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+
+}
+input[type="submit"]:hover{
+    font-size: 18px;
+}
+#amount{
+    color:green;
+    font-size: 40px;
+    margin-left: 60px;
 }
