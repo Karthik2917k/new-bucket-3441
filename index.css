@@ -1,291 +1,277 @@
-.bg{
-    background-color: black;
-   }
-#navbar{
-    position:fixed;
-    top: 0px;
-   
-    width: 100%;
-    height: 80px;
-   padding-left: 10%;
-    text-align: center;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 100px 650px 400px ;
-    gap:20px 20px;
+.bg {
+  background-color: black;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+
+  width: 100%;
+  height: 80px;
+  padding-left: 10%;
+  text-align: center;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 100px 650px 400px;
+  gap: 20px 20px;
 }
 
-#navbar ul{
-    display: inline-flex;
-    list-style: none;
+#navbar ul {
+  display: inline-flex;
+  list-style: none;
 }
-#navbar h1{
-    color:white;
+#navbar h1 {
+  color: white;
 }
-#navbar h1:nth-child(2){
-    padding-left: 200px;
+#navbar h1:nth-child(2) {
+  padding-left: 200px;
 }
-#navbar ul a{
-    text-decoration: none;
-    font-size: 30px;
-    color:white;
-    padding:0px 20px;
+#navbar ul a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  padding: 0px 20px;
 }
-.home-page-1{
-    background: url(https://papers.co/wallpaper/papers.co-sh47-water-melon-art-gradation-blur-36-3840x2400-4k-wallpaper.jpg);
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 2px;
+.home-page-1 {
+  background: url(https://papers.co/wallpaper/papers.co-sh47-water-melon-art-gradation-blur-36-3840x2400-4k-wallpaper.jpg);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 2px;
 }
-.home-page-1 #sale{
-    color: black;
-    background-color: white;
-   border-radius: 40px;
-    padding:15px 100px;
-    border: none;
-    font-size: 30px;
-    font-weight:bold;
-    
+.home-page-1 #sale {
+  color: black;
+  background-color: white;
+  border-radius: 40px;
+  padding: 15px 100px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.home-page-1 #content{
-    font-size: 50px;
-    font-family: inherit;
-    font-family:Arial, Helvetica, sans-serif;
+.home-page-1 #content {
+  font-size: 50px;
+  font-family: inherit;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .home-page-1 #viewall {
-    color: black;
-    background-color: white;
-  
-    padding:15px 100px;
-    border: none;
-    font-size: 30px;
-    font-weight:bold;
-    
+  color: black;
+  background-color: white;
+
+  padding: 15px 100px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
 }
-.home-page-1 #viewall:hover{
-    color:white;
-    background-color: black;
+.home-page-1 #viewall:hover {
+  color: white;
+  background-color: black;
 }
-.home-page-1 #div1{
-   width:90%;
-   margin:auto;
-   display: grid;
-  grid-template-columns: repeat(6,1fr);
-  gap:20px;
+.home-page-1 #div1 {
+  width: 90%;
+  height: 350px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
   margin-bottom: 50px;
-
-  
 }
-.home-page-1 #div1 >div{
-    width:100%;
-    background-color: white;
-  
+.home-page-1 #div1 > div {
+  width: 100%;
+  background-color: white;
 }
-.home-page-1 #div1 >div:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 105%;
-
+.home-page-1 #div1 > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 105%;
 }
-.home-page-1 #div1 >div>img{
-    width: 100%;
+.home-page-1 #div1 > div > img {
+  width: 100%;
 }
 
-.home-page-1 #div1 >div>h4{
-    width:100%;
-    font-weight: bold;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+.home-page-1 #div1 > div > h4 {
+  width: 100%;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.home-page-2{
-    text-align: center;
-   
+.home-page-2 {
+  text-align: center;
 }
-.home-page-2 h1{
-    position: absolute;
-    bottom: -640px;
-    left:550px;
-    font-size: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    background: white;
-    padding: 20px 30px;
+.home-page-2 h1 {
+  position: absolute;
+  bottom: -640px;
+  left: 550px;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  background: white;
+  padding: 20px 30px;
 }
-.home-page-2 button{
-    position: absolute;
-    bottom: -700px;
-    left:630px;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    background: white;
-    padding: 10px 20px;
-    border: none;
+.home-page-2 button {
+  position: absolute;
+  bottom: -700px;
+  left: 630px;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  background: white;
+  padding: 10px 20px;
+  border: none;
 }
-.home-page-2 button:hover{
-    background: black;
-    color:white;
+.home-page-2 button:hover {
+  background: black;
+  color: white;
 }
-.home-page-2 p{
-    position: absolute;
-    bottom: -750px;
-    left:565px;
-    
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   
-}
-#home-page-3{
-    width:90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:20px 20px;
-    text-align: center;
-    margin: 50px auto 50px auto;
-}
-#home-page-3>div:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#home-page-3>div>img{
-    width:100%;
-}
-#Home-page-4{
-    width:70%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:50px;
-    text-align: center;
-}
-#Home-page-4>div>img{
-    width:100%;
-}
-#Home-page-4>div:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-#Home-page-4>div>button{
-    border:2px solid black;
-    margin:50px;
-    font-weight: bold;
-    font-family: sans-serif;
-    background-color: white;
-    padding: 10px 20px;
-    font-size: 20px;
-}  
-#Home-page-4>div>button:hover{
-    color:white;
-    background-color: black;
-} 
-#home-page-5{
-    width:80%;
-    text-align: center;
-    margin: auto;
-    margin-top: 50px;
-  
-}
-#home-page-5>div:nth-child(2){
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    gap:20px;
-   
-}
-#home-page-5>div:nth-child(2)>img{
-    width:100%;
-}
-#home-page-5>div:nth-child(2)>img:hover{
-    width:90%;
-}
-.home-page-6{
-    width:60%;
-    height:60px;
-    margin:auto;
-    text-align: center;
-    display: grid;
-    grid-template-columns:repeat(2,1fr);
-   
-  
-}
-.home-page-6>div{
-    width: 100%;height: 50px;
-    
-    display: flex;
+.home-page-2 p {
+  position: absolute;
+  bottom: -750px;
+  left: 565px;
 
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.home-page-6>div:nth-child(1){
-    border-right: 2px solid grey;
+#home-page-3 {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+  text-align: center;
+  margin: 50px auto 50px auto;
 }
-.home-page-6>div>div{
-    
-    padding-top: 10px;
+#home-page-3 > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#home-page-3 > div > img {
+  width: 100%;
+}
+#Home-page-4 {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  text-align: center;
+}
+#Home-page-4 > div > img {
+  width: 100%;
+}
+#Home-page-4 > div:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#Home-page-4 > div > button {
+  border: 2px solid black;
+  margin: 50px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+#Home-page-4 > div > button:hover {
+  color: white;
+  background-color: black;
+}
+#home-page-5 {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+#home-page-5 > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+#home-page-5 > div:nth-child(2) > img {
+  width: 100%;
+}
+#home-page-5 > div:nth-child(2) > img:hover {
+  width: 90%;
+}
+.home-page-6 {
+  width: 60%;
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.home-page-6 > div {
+  width: 100%;
+  height: 50px;
 
+  display: flex;
 }
-.home-page-6>div:nth-child(1)>div>img{
-    width:25%;
+.home-page-6 > div:nth-child(1) {
+  border-right: 2px solid grey;
 }
-.home-page-6>div:nth-child(1)>div>img:hover{
-    width:27%;
+.home-page-6 > div > div {
+  padding-top: 10px;
 }
-.home-page-6>div:nth-child(2)>div>img{
-    width:60%;
+.home-page-6 > div:nth-child(1) > div > img {
+  width: 25%;
 }
-.mainfooter{
-    background: lightgrey;
+.home-page-6 > div:nth-child(1) > div > img:hover {
+  width: 27%;
 }
-.footer{
-    width:90%;
-    
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:50px;
+.home-page-6 > div:nth-child(2) > div > img {
+  width: 60%;
 }
-.footer>div>ul li{
-    list-style: none;
-    
-    margin-left: -25px;
-    padding: 5px;
+.mainfooter {
+  background: lightgrey;
 }
-.footer>div>ul li a{
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-size: 16px;
-    
-    font-family:Verdana,sans-serif;
-}
-.footer>div>ul li a:hover{
-    color: lightslategray;
-}
-#service1{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap:20px
-}
-#service1>h3:nth-child(1){
-    border-right: 2px solid grey;
-}
-#footer2{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(114, 114, 111);
-    text-align: center;
-}
-#footer2>div>p{
-    padding-left: 100px;
-}
-#footer2>div:nth-child(2){
-    padding-right: 100px;
-    padding-top: 1%;
+.footer {
+  width: 90%;
 
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
 }
-#footer2>div>button{
-    border: none;
+.footer > div > ul li {
+  list-style: none;
 
-    background-color: rgb(114, 114, 111);
+  margin-left: -25px;
+  padding: 5px;
 }
-#footer2>div>button:hover{
-    color:lightgray;
+.footer > div > ul li a {
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+
+  font-family: Verdana, sans-serif;
 }
-#footer2>div>button:nth-child(1),#footer2>div>button:nth-child(2){
-    border-right: 2px solid black;
+.footer > div > ul li a:hover {
+  color: lightslategray;
+}
+#service1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#service1 > h3:nth-child(1) {
+  border-right: 2px solid grey;
+}
+#footer2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(114, 114, 111);
+  text-align: center;
+}
+#footer2 > div > p {
+  padding-left: 100px;
+}
+#footer2 > div:nth-child(2) {
+  padding-right: 100px;
+  padding-top: 1%;
+}
+#footer2 > div > button {
+  border: none;
+
+  background-color: rgb(114, 114, 111);
+}
+#footer2 > div > button:hover {
+  color: lightgray;
+}
+#footer2 > div > button:nth-child(1),
+#footer2 > div > button:nth-child(2) {
+  border-right: 2px solid black;
 }
