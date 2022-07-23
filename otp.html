@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Otp</title>
-    <link rel="stylesheet" href="./otp.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./otp.css" />
+  </head>
+  <body>
     <div id="container">
-        <div id="container1">
-            <div><img src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/8195/images/bank-logo.gif" alt="paytm"></div>
-            <div><img src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/common/images/rupay-logo.png" alt="rupay"></div>
-            
+      <div id="container1">
+        <div>
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/8195/images/bank-logo.gif"
+            alt="paytm"
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/common/images/rupay-logo.png"
+            alt="rupay"
+          />
+        </div>
+      </div>
+      <div>
+        <p>One time password sent to</p>
+        <p>Your mobile Number</p>
+        <p>Please Use OTP and authenticate the transaction</p>
+        <p>Card Number: 1234xxxxxxxxx456</p>
+      </div>
 
+      <div>
+        <div id="o">
+          <div>ENTER OTP</div>
+          <div>
+            <form action="">
+              <input
+                type="number"
+                id="otp"
+                placeholder="OTP (one time password)"
+              /><br />
+              <input type="submit" value="Submit" />
+            </form>
+            <button id="button">CANCEL</button>
+          </div>
         </div>
-        <div>
-            <p>One time password sent to</p>
-            <p> Your mobile Number</p>
-            <p>Please Use OTP and authenticate the transaction</p>
-            <p>Card Number: 1234xxxxxxxxx456</p>
-        </div>
-        
-        <div>
-            <div id="o">
-                <div >
-                    ENTER OTP
-                </div>
-                <div>
-                    <form action="">
-                        <input type="number" id="otp" placeholder="OTP (one time password)"><br>
-                        <input type="submit" value="Submit">
-                       
-                    </form>
-                    <button id="button">CANCEL</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-    <p>After Succesful transaction page will  automatically redirect in to order page  </p>
-    <img id="brand" src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/common/images/wbmo.png" alt="">
-</body>
-<script src="./otp.js"></script>
+    <p>
+      After Succesful transaction page will automatically redirect in to order
+      page
+    </p>
+    <img
+      id="brand"
+      src="https://s3.ap-south-1.amazonaws.com/in-mum-wibmo-acs/static/common/images/wbmo.png"
+      alt=""
+    />
+  </body>
+  <script src="./otp.js"></script>
 </html>
