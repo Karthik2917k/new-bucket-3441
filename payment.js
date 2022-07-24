@@ -2,7 +2,7 @@ let form = document.querySelector("form");
 form.addEventListener("submit", paymentfunnc);
 let amount = document.querySelector("#amount");
 let totalamount = JSON.parse(localStorage.getItem("totalprice")) || [];
-amount.textContent = "$" + totalamount + "/-";
+amount.textContent = "$" + totalamount.toFixed(1) + "/-";
 let paymentarr = JSON.parse(localStorage.getItem("payment")) || [];
 function paymentfunnc(e) {
   e.preventDefault();
