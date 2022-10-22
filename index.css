@@ -1,35 +1,109 @@
-.bg {
-  background-color: black;
+*{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-#navbar {
-  position: fixed;
-  top: 0px;
 
+
+header {
   width: 100%;
   height: 80px;
-  padding-left: 10%;
-  text-align: center;
-  background-color: black;
-  display: grid;
-  grid-template-columns: 100px 650px 400px;
-  gap: 20px 20px;
+  background-color: #11101b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
 }
 
-#navbar ul {
-  display: inline-flex;
-  list-style: none;
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: #FEFEFE;
 }
-#navbar h1 {
-  color: white;
+a{
+  color:#fefefe
 }
-#navbar h1:nth-child(2) {
-  padding-left: 200px;
+.hamberger{
+  display:none;
 }
-#navbar ul a {
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  padding: 0px 20px;
+.nav-bar ul{
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #FEFEFE;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background-color: #FEFEFE;
+}
+
+.nav-bar ul li a.active {
+  color: #11101b;
+  background-color: #FEFEFE;
+}
+
+@media only screen and (max-width:1320px){
+  header{
+      padding: 0 50px;
+  }
+} 
+
+@media only screen and (max-width:1100px){
+  header{
+      padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width:900px){
+  .hamberger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamberger .line {
+      width:30px;
+      height: 3px;
+      background: #fefefe;
+      margin:6px 0;
+  }
+  .nav-bar {
+      height: 0px;
+      position: absolute;
+      top:80px;
+      left:0;
+      right:0;
+      width:100vw;
+      background-color:#11101b;
+      transition: 0.5s;
+      overflow: hidden;
+  }
+  .nav-bar.active {
+       height: auto;
+       padding-bottom: 50px;
+  }
+  .nav-bar ul {
+      display: block;
+      width:fit-content;
+      margin: 30px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+  }
+  .nav-bar.active ul{
+      opacity: 1;
+  }
+  .nav-bar ul li a {
+      margin-bottom: 12px;
+  } 
 }
 .home-page-1 {
   background: url(https://papers.co/wallpaper/papers.co-sh47-water-melon-art-gradation-blur-36-3840x2400-4k-wallpaper.jpg);
@@ -67,7 +141,6 @@
 }
 .home-page-1 #div1 {
   width: 90%;
-  height: 350px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -93,11 +166,17 @@
 }
 .home-page-2 {
   text-align: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://content.asos-media.com/-/media/homepages/mw/2022/july/18/heros/desktop-homepage-mw-main---final.jpg");
+  background-size: cover;
 }
+
 .home-page-2 h1 {
-  position: absolute;
-  bottom: -640px;
-  left: 550px;
+  margin-top: 260px;
   font-size: 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
@@ -105,9 +184,6 @@
   padding: 20px 30px;
 }
 .home-page-2 button {
-  position: absolute;
-  bottom: -700px;
-  left: 630px;
   font-size: 30px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
@@ -120,10 +196,9 @@
   color: white;
 }
 .home-page-2 p {
-  position: absolute;
-  bottom: -750px;
-  left: 565px;
-
+  width: 90%;
+  color: black;
+  font-weight: 400;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 #home-page-3 {
@@ -187,7 +262,7 @@
 }
 .home-page-6 {
   width: 60%;
-  height: 60px;
+  height: auto;
   margin: auto;
   text-align: center;
   display: grid;
@@ -196,20 +271,19 @@
 .home-page-6 > div {
   width: 100%;
   height: 50px;
-
   display: flex;
 }
 .home-page-6 > div:nth-child(1) {
   border-right: 2px solid grey;
 }
 .home-page-6 > div > div {
-  padding-top: 10px;
+  padding-top: 2px;
 }
 .home-page-6 > div:nth-child(1) > div > img {
-  width: 25%;
+  width: 20%;
 }
 .home-page-6 > div:nth-child(1) > div > img:hover {
-  width: 27%;
+  width: 22%;
 }
 .home-page-6 > div:nth-child(2) > div > img {
   width: 60%;
@@ -274,4 +348,79 @@
 #footer2 > div > button:nth-child(1),
 #footer2 > div > button:nth-child(2) {
   border-right: 2px solid black;
+}
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .home-page-1 #div1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10px;
+  }
+  #home-page-3 {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px auto 50px auto;
+  }
+  #Home-page-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-page-5 > div:nth-child(2) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home-page-6 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .home-page-6 > div:nth-child(1) {
+    border-right:0;
+    border-bottom: 2px solid grey;
+  }
+  .footer {
+    width: 90%;
+  
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .footer>div{
+    text-align: center;
+  }
+  #footer2{
+    flex-direction: column;
+    text-align: center;
+  }
+  #footer2 > div:nth-child(2) {
+    padding-right: 0;
+    padding-bottom: 0%;
+    padding-top: 1%;
+  }
+  #copy-rights{
+   margin-left: -100px;
+
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+  .home-page-1 #div1 {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10px;
+  }
+  #home-page-3 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto 50px auto;
+  }
+  #Home-page-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #home-page-5 > div:nth-child(2) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home-page-6 > div:nth-child(1) > div > img {
+    width: 25%;
+  }
+  .home-page-6 > div:nth-child(1) > div > img:hover {
+    width: 26%;
+  }
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
 }

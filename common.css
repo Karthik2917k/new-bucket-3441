@@ -1,27 +1,110 @@
-.bg {
-  background-color: black;
+*{
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
-#navbar {
-  position: fixed;
-  top: 0px;
 
+
+header {
   width: 100%;
   height: 80px;
-  padding-left: 10%;
-  text-align: center;
-  background-color: black;
-  display: grid;
-  grid-template-columns: 100px 650px 400px;
-  gap: 20px 20px;
+  background-color: #11101b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
 }
-#about {
-  margin-top: 100px;
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: #FEFEFE;
 }
-#orderr {
-  color: green;
-  font-size: 70px;
-  text-align: center;
-  margin: 180px 0px 150px 0px;
+a{
+  color:#fefefe
+}
+.hamberger{
+  display:none;
+}
+.nav-bar ul{
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #FEFEFE;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: #11101b;
+  background-color: #FEFEFE;
+}
+
+.nav-bar ul li a.active {
+  color: #11101b;
+  background-color: #FEFEFE;
+}
+
+@media only screen and (max-width:1320px){
+  header{
+      padding: 0 50px;
+  }
+} 
+
+@media only screen and (max-width:1100px){
+  header{
+      padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width:900px){
+  .hamberger {
+      display: block;
+      cursor: pointer;
+  }
+  .hamberger .line {
+      width:30px;
+      height: 3px;
+      background: #fefefe;
+      margin:6px 0;
+  }
+  .nav-bar {
+      height: 0px;
+      position: absolute;
+      top:80px;
+      left:0;
+      right:0;
+      width:100vw;
+      background-color:#11101b;
+      transition: 0.5s;
+      overflow: hidden;
+  }
+  .nav-bar.active {
+       height: auto;
+       padding-bottom: 50px;
+  }
+  .nav-bar ul {
+      display: block;
+      width:fit-content;
+      margin: 30px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      opacity: 0;
+  }
+
+  .nav-bar.active ul{
+      opacity: 1;
+  }
+  .nav-bar ul li a {
+      margin-bottom: 12px;
+  } 
 }
 #about > h1 {
   width: 50%;
@@ -46,38 +129,14 @@
   padding: 50px;
   font-family: sans-serif;
 }
-#log {
-  text-decoration: none;
+#name {
+  text-align: left;
+  padding: 8px;
   color: white;
-}
-#navbar ul {
-  display: inline-flex;
-  list-style: none;
-}
-#navbar h1 {
-  color: white;
-}
-#navbar h1:nth-child(2) {
-  padding-left: 200px;
-}
-#navbar ul a {
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  padding: 0px 20px;
-}
-form {
-  margin-top: 90px;
-  margin-left: 75%;
-  margin-bottom: 20px;
-}
-.names {
-  color: white;
-  background-color: black;
-  padding: 10px;
-  border-radius: 2px;
-  font-size: 20px;
+  background-color: rgb(0, 0, 0);
   font-weight: bold;
+  margin-bottom: 50px;
+  margin-left: 90%;
 }
 .container {
   width: 90%;
@@ -102,10 +161,9 @@ form {
 }
 .container > div > button {
   border: none;
-  border-radius: 1px;
   background: green;
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 10px;
   padding: 15px 50px;
   margin-bottom: 50px;
 }
@@ -147,24 +205,21 @@ form {
 }
 .footer {
   width: 90%;
-
   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
+  padding: 50px 0px;
 }
 .footer > div > ul li {
   list-style: none;
-
-  margin-left: -25px;
+  margin-left: 25px;
   padding: 5px;
 }
 .footer > div > ul li a {
   text-align: center;
   color: black;
   text-decoration: none;
-  font-size: 16px;
-
   font-family: Verdana, sans-serif;
 }
 .footer > div > ul li a:hover {
@@ -187,7 +242,8 @@ form {
 #footer2 > div > p {
   padding-left: 100px;
 }
-#footer2 > div:nth-child(2) {
+#footer2 > div{
+  padding: 5px;
   padding-right: 100px;
   padding-top: 1%;
 }
@@ -197,9 +253,33 @@ form {
   background-color: rgb(114, 114, 111);
 }
 #footer2 > div > button:hover {
-  color: lightgray;
+  color: rgb(255, 255, 255);
 }
 #footer2 > div > button:nth-child(1),
 #footer2 > div > button:nth-child(2) {
   border-right: 2px solid black;
+}
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #name {
+    margin-top: 90px;
+    text-align: left;
+    padding: 8px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-bottom: 50px;
+    margin-left: 62.5%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #name {
+        margin-left: 78%;
+      }
+
 }

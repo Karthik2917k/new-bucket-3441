@@ -56,7 +56,7 @@ let salesarr = [
   },
   {
     img: "https://images.asos-media.com/products/topman-longsleeve-oversized-fit-tie-dye-t-shirt-with-front-and-back-north-dakota-print-in-green/200896667-1-green?$n_640w$&wid=634&fit=constrain",
-    name: "New Look oversized joggers in dusty lilac",
+    name: "",
     price: 20,
   },
   {
@@ -202,7 +202,6 @@ let salesarr = [
 ];
 container = document.querySelector(".container");
 let filter = document.querySelector("#name");
-let namefilter = document.querySelector("#namee");
 let cartls = JSON.parse(localStorage.getItem("cartpage")) || [];
 let flag = JSON.parse(localStorage.getItem("flag")) || [];
 function display(data) {
@@ -261,22 +260,3 @@ if (signinarr === null) {
   signin.textContent = signinarr[signinarr.length - 1].name;
   signup.textContent = "";
 }
-namefilter.addEventListener("change", function () {
-    if (namefilter.value === "") {
-      display(salesarr);
-    } else if (namefilter.value === "A-Z") {
-      let filtered = salesarr.sort(function (a, b) {
-        if (a.name.toUpperCase() > b.name.toUpperCase()) return 1;
-        if (a.name.toUpperCase() < b.name.toUpperCase()) return -1;
-        return 0;
-      });
-      display(filtered);
-    } else if (namefilter.value === "Z-A") {
-      let filtered = salesarr.sort(function (a, b) {
-        if (a.name.toUpperCase() > b.name.toUpperCase()) return -1;
-        if (a.name.toUpperCase() < b.name.toUpperCase()) return 1;
-        return 0;
-      });
-      display(filtered);
-    }
-  });
